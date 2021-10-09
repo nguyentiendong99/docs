@@ -1,0 +1,179 @@
+[
+	{
+		"his_mabenhnhan": "HSBN-123",
+		"his_tenbenhnhan": "Nguyễn Hoàng A",
+		"his_sodienthoai": "0964997296",
+		"his_mabenhvien": "BVNYB",
+		"his_tenbenhvien": "Bệnh viện đa khoa tỉnh Yên Bái",
+		"his_danhsachketquakham": [
+			{
+				"his_makham": "12344",
+				"his_tenchuyenkhoa": "KHOA TIÊU HÓA",
+				"his_ngaykham": "202012101028"
+			}
+		]
+	},
+	{
+		"his_mabenhnhan": "HSBN-124",
+		"his_tenbenhnhan": "Nguyễn Hoàng B",
+		"his_sodienthoai": "0964997296",
+		"his_mabenhvien": "BVNYB",
+		"his_tenbenhvien": "Bệnh viện đa khoa tỉnh Yên Bái",
+		"his_danhsachketquakham": [
+			{
+				"his_makham": "12345",
+				"his_tenchuyenkhoa": "KHOA XƯƠNG",
+				"his_ngaykham": "202101101515"
+			},
+			{
+				"his_makham": "12346",
+				"his_tenchuyenkhoa": "KHOA LÂY NHIỄM",
+				"his_ngaykham": "202101110825"
+			}
+		]
+	},
+	{
+		"his_mabenhnhan": "HSBN-1000",
+		"his_tenbenhnhan": "Nguyễn Hoàng C",
+		"his_sodienthoai": "0964997296",
+		"his_mabenhvien": "BVNYB",
+		"his_tenbenhvien": "Bệnh viện đa khoa tỉnh Yên Bái",
+		"his_danhsachketquakham": [
+			{
+				"his_makham": "12347",
+				"his_tenchuyenkhoa": "KHOA TIÊU HÓA",
+				"his_ngaykham": "202101071330"
+			},
+			{
+				"his_makham": "12348",
+				"his_tenchuyenkhoa": "KHOA HÔ HẤP",
+				"his_ngaykham": "202011110824"
+			},
+			{
+				"his_makham": "12349",
+				"his_tenchuyenkhoa": "KHOA THẦN KINH",
+				"his_ngaykham": "202011110930"
+			}
+		]
+	},
+	{
+		"his_mabenhnhan": "HSBN-101",
+		"his_tenbenhnhan": "Nguyễn Hoàng D",
+		"his_sodienthoai": "0964997296",
+		"his_mabenhvien": "BVDKYB",
+		"his_tenbenhvien": "Bệnh viện đa khoa tỉnh Yên Bái",
+		"his_danhsachketquakham": [
+			{
+				"his_makham": "12347",
+				"his_tenchuyenkhoa": "KHOA TIÊU HÓA",
+				"his_ngaykham": "202101071330"
+			},
+			{
+				"his_makham": "12348",
+				"his_tenchuyenkhoa": "KHOA HÔ HẤP",
+				"his_ngaykham": "202011110824"
+			},
+			{
+				"his_makham": "12349",
+				"his_tenchuyenkhoa": "KHOA THẦN KINH",
+				"his_ngaykham": "202011110930"
+			}
+		]
+	},
+	{
+		"his_mabenhnhan": "HSBN-1000",
+		"his_tenbenhnhan": "Nguyễn Hoàng E",
+		"his_sodienthoai": "0964997296",
+		"his_mabenhvien": "BVDKYB",
+		"his_tenbenhvien": "Bệnh viện đa khoa tỉnh Yên Bái",
+		"his_danhsachketquakham": [
+			{
+				"his_makham": "12347",
+				"his_tenchuyenkhoa": "KHOA TIÊU HÓA",
+				"his_ngaykham": "202101071330"
+			},
+			{
+				"his_makham": "12348",
+				"his_tenchuyenkhoa": "KHOA HÔ HẤP",
+				"his_ngaykham": "202011110824"
+			},
+			{
+				"his_makham": "12349",
+				"his_tenchuyenkhoa": "KHOA THẦN KINH",
+				"his_ngaykham": "202011110930"
+			}
+		]
+	},
+	{
+		"his_mabenhnhan": "HSBN-1000",
+		"his_tenbenhnhan": "Nguyễn Hoàng F",
+		"his_sodienthoai": "0964997296",
+		"his_mabenhvien": "BVDKYB",
+		"his_tenbenhvien": "Bệnh viện đa khoa tỉnh Yên Bái",
+		"his_danhsachketquakham": [
+			{
+				"his_makham": "12347",
+				"his_tenchuyenkhoa": "KHOA TIÊU HÓA",
+				"his_ngaykham": "202101071330"
+			},
+			{
+				"his_makham": "12348",
+				"his_tenchuyenkhoa": "KHOA HÔ HẤP",
+				"his_ngaykham": "202011110824"
+			},
+			{
+				"his_makham": "12349",
+				"his_tenchuyenkhoa": "KHOA THẦN KINH",
+				"his_ngaykham": "202011110930"
+			}
+		]
+	},
+	{
+		"his_mabenhnhan": "HSBN-1000",
+		"his_tenbenhnhan": "Nguyễn Hoàng G",
+		"his_sodienthoai": "0964997296",
+		"his_mabenhvien": "BVNYB",
+		"his_tenbenhvien": "Bệnh viện đa khoa tỉnh Yên Bái",
+		"his_danhsachketquakham": [
+			{
+				"his_makham": "12347",
+				"his_tenchuyenkhoa": "KHOA TIÊU HÓA",
+				"his_ngaykham": "202101071330"
+			},
+			{
+				"his_makham": "12348",
+				"his_tenchuyenkhoa": "KHOA HÔ HẤP",
+				"his_ngaykham": "202011110824"
+			},
+			{
+				"his_makham": "12349",
+				"his_tenchuyenkhoa": "KHOA THẦN KINH",
+				"his_ngaykham": "202011110930"
+			}
+		]
+	},
+	{
+		"his_mabenhnhan": "HSBN-1000",
+		"his_tenbenhnhan": "Nguyễn Hoàng H",
+		"his_sodienthoai": "0964997296",
+		"his_mabenhvien": "BVDKYB",
+		"his_tenbenhvien": "Bệnh viện đa khoa tỉnh Yên Bái",
+		"his_danhsachketquakham": [
+			{
+				"his_makham": "12347",
+				"his_tenchuyenkhoa": "KHOA TIÊU HÓA",
+				"his_ngaykham": "202101071330"
+			},
+			{
+				"his_makham": "12348",
+				"his_tenchuyenkhoa": "KHOA HÔ HẤP",
+				"his_ngaykham": "202011110824"
+			},
+			{
+				"his_makham": "12349",
+				"his_tenchuyenkhoa": "KHOA THẦN KINH",
+				"his_ngaykham": "202011110930"
+			}
+		]
+	}
+]

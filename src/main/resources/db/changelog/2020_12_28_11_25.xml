@@ -1,0 +1,15 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+    <changeSet author="Admin (generated)" id="1609154749011-5">
+        <addForeignKeyConstraint baseColumnNames="processing_unit_id" baseTableName="feedback" constraintName="FK8ityi9gewkbjb2xe0shue50nn" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="health_facilities" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1609154749011-6">
+        <addForeignKeyConstraint baseColumnNames="feedbacked_unit_id" baseTableName="feedback" constraintName="FKcbk63pf68p5ndoql8d8dqbc5c" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="health_facilities" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1609154749011-2">
+        <addNotNullConstraint columnDataType="bigint" columnName="feedbacked_unit_id" tableName="feedback" validate="true"/>
+    </changeSet>
+    <changeSet author="Admin (generated)" id="1609154749011-3">
+        <addNotNullConstraint columnDataType="bigint" columnName="processing_unit_id" tableName="feedback" validate="true"/>
+    </changeSet>
+</databaseChangeLog>

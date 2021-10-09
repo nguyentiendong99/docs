@@ -1,0 +1,20 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.10.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.10.xsd">
+    <changeSet author="DELL (generated)" id="1608523421382-1">
+        <addColumn tableName="doctor">
+            <column name="health_facility_id" type="bigint"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="DELL (generated)" id="1608523421382-2">
+        <dropColumn columnName="code" tableName="position_history"/>
+    </changeSet>
+    <changeSet author="DELL (generated)" id="1608523421382-3">
+        <dropColumn columnName="name" tableName="position_history"/>
+    </changeSet>
+    <changeSet author="DELL (generated)" id="1608523421382-4">
+        <dropColumn columnName="parent_id" tableName="position_history"/>
+    </changeSet>
+    <changeSet author="DELL (generated)" id="1608523421382-5">
+        <dropColumn columnName="status" tableName="position_history"/>
+    </changeSet>
+</databaseChangeLog>

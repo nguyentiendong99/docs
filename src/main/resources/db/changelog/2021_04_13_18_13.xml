@@ -1,0 +1,291 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+    <changeSet author="hunters" id="insert-authority-01">
+        <insert tableName="authority">
+            <column name="name" value="AUDITS_MANAGEMENT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-02">
+        <insert tableName="authority">
+            <column name="name" value="AUTHORITY_MANAGEMENT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-03">
+        <insert tableName="authority">
+            <column name="name" value="CATEGORY_MANAGEMENT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-04">
+        <insert tableName="authority">
+            <column name="name" value="CONFIG_MANAGEMENT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-05">
+        <insert tableName="authority">
+            <column name="name" value="DEPARTMENT_MANAGEMENT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-06">
+        <insert tableName="authority">
+            <column name="name" value="DOCTOR_APPOINTMENT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-07">
+        <insert tableName="authority">
+            <column name="name" value="DOCTOR_APPOINTMENT_APPROVE"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-08">
+        <insert tableName="authority">
+            <column name="name" value="DOCTOR_APPOINTMENT_BY_DOCTOR"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-09">
+        <insert tableName="authority">
+            <column name="name" value="DOCTOR_APPOINTMENT_CHANGE"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-10">
+        <insert tableName="authority">
+            <column name="name" value="DOCTOR_APPOINTMENT_DETAIL"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-11">
+        <insert tableName="authority">
+            <column name="name" value="DOCTOR_APPOINTMENT_EXPORT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-12">
+        <insert tableName="authority">
+            <column name="name" value="DOCTOR_APPOINTMENT_HISTORY"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-13">
+        <insert tableName="authority">
+            <column name="name" value="DOCTOR_SCHEDULE"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-14">
+        <insert tableName="authority">
+            <column name="name" value="DOCTOR_SCHEDULE_CREATE_BY_DATE"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-15">
+        <insert tableName="authority">
+            <column name="name" value="DOCTOR_SCHEDULE_CREATE_BY_DOCTOR"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-16">
+        <insert tableName="authority">
+            <column name="name" value="DOCTOR_SCHEDULE_CREATE_BY_EXCEL"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-17">
+        <insert tableName="authority">
+            <column name="name" value="DOCTOR_SCHEDULE_DELETE"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-18">
+        <insert tableName="authority">
+            <column name="name" value="DOCTOR_SCHEDULE_EXPORT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-19">
+        <insert tableName="authority">
+            <column name="name" value="DOCTOR_SCHEDULE_UPDATE"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-20">
+        <insert tableName="authority">
+            <column name="name" value="FEEDBACK"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-21">
+        <insert tableName="authority">
+            <column name="name" value="FEEDBACK_DETAIL"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-22">
+        <insert tableName="authority">
+            <column name="name" value="FEEDBACK_DOCTOR"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-23">
+        <insert tableName="authority">
+            <column name="name" value="FEEDBACK_DOCTOR_DETAIL"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-24">
+        <insert tableName="authority">
+            <column name="name" value="FEEDBACK_DOCTOR_HISTORY"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-25">
+        <insert tableName="authority">
+            <column name="name" value="FEEDBACK_DOCTOR_REVIEW"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-26">
+        <insert tableName="authority">
+            <column name="name" value="FEEDBACK_HISTORY"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-27">
+        <insert tableName="authority">
+            <column name="name" value="FEEDBACK_REVIEW"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-28">
+        <insert tableName="authority">
+            <column name="name" value="HEALTHFACILITY_MANAGEMENT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-29">
+        <insert tableName="authority">
+            <column name="name" value="INTEGRATED_MANAGEMENT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-30">
+        <insert tableName="authority">
+            <column name="name" value="KQ_CLS"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-31">
+        <insert tableName="authority">
+            <column name="name" value="KQ_CLS_EXPORT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-32">
+        <insert tableName="authority">
+            <column name="name" value="KQ_CLS_SEND"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-33">
+        <insert tableName="authority">
+            <column name="name" value="LOG_MANAGEMENT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-34">
+        <insert tableName="authority">
+            <column name="name" value="MEDICAL_DECLARATION"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-35">
+        <insert tableName="authority">
+            <column name="name" value="MEDICAL_DECLARATION_DETAIL"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-36">
+        <insert tableName="authority">
+            <column name="name" value="NOTIFICATION_MANAGEMENT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-37">
+        <insert tableName="authority">
+            <column name="name" value="NOTIFICATION_MANAGEMENT_ACCEPT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-38">
+        <insert tableName="authority">
+            <column name="name" value="NOTIFICATION_MANAGEMENT_CANCEL"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-39">
+        <insert tableName="authority">
+            <column name="name" value="NOTIFICATION_MANAGEMENT_CREATE"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-40">
+        <insert tableName="authority">
+            <column name="name" value="NOTIFICATION_MANAGEMENT_DELETE"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-41">
+        <insert tableName="authority">
+            <column name="name" value="NOTIFICATION_MANAGEMENT_HISTORY"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-42">
+        <insert tableName="authority">
+            <column name="name" value="NOTIFICATION_MANAGEMENT_RECALL"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-43">
+        <insert tableName="authority">
+            <column name="name" value="NOTIFICATION_MANAGEMENT_UPDATE"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-44">
+        <insert tableName="authority">
+            <column name="name" value="NOTIFICATION_MANAGEMENT_VIEW"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-45">
+        <insert tableName="authority">
+            <column name="name" value="PATIENT_RECORD"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-46">
+        <insert tableName="authority">
+            <column name="name" value="PATIENT_RECORD_DETAIL"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-47">
+        <insert tableName="authority">
+            <column name="name" value="POSITION_MANAGEMENT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-48">
+        <insert tableName="authority">
+            <column name="name" value="RE_EXAMINATION"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-49">
+        <insert tableName="authority">
+            <column name="name" value="RE_EXAMINATION_EXPORT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-50">
+        <insert tableName="authority">
+            <column name="name" value="RE_EXAMINATION_HISTORY"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-51">
+        <insert tableName="authority">
+            <column name="name" value="RE_EXAMINATION_UPDATE"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-52">
+        <insert tableName="authority">
+            <column name="name" value="REPORT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-53">
+        <insert tableName="authority">
+            <column name="name" value="ROLE_ADMIN"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-54">
+        <insert tableName="authority">
+            <column name="name" value="ROLE_MANAGER"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-55">
+        <insert tableName="authority">
+            <column name="name" value="ROLE_SUPER_ADMIN"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-56">
+        <insert tableName="authority">
+            <column name="name" value="ROLE_USER"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="insert-authority-57">
+        <insert tableName="authority">
+            <column name="name" value="USER_MANAGEMENT"/>
+        </insert>
+    </changeSet>
+    <changeSet author="hunters" id="alter-table-notification-9">
+        <modifyDataType tableName="notification" columnName="type" newDataType="VARCHAR(255)"/>
+    </changeSet>
+</databaseChangeLog>

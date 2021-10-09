@@ -1,0 +1,376 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.10.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.10.xsd">
+    <changeSet author="anhmi (generated)" id="1607058690689-1">
+        <createTable tableName="activity_log">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="activity_logPK"/>
+            </column>
+            <column name="action" type="VARCHAR(255)"/>
+            <column name="content" type="TEXT"/>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="job_title" type="VARCHAR(255)"/>
+            <column name="module_name" type="VARCHAR(255)"/>
+            <column name="owner_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-2">
+        <createTable tableName="area">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="areaPK"/>
+            </column>
+            <column name="alias" type="VARCHAR(255)"/>
+            <column name="area_code" type="VARCHAR(255)"/>
+            <column name="latitude" type="DOUBLE"/>
+            <column name="level" type="INT"/>
+            <column name="longitude" type="DOUBLE"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="parent_code" type="VARCHAR(255)"/>
+            <column name="postal_code" type="VARCHAR(255)"/>
+            <column name="priority" type="INT"/>
+            <column name="short_name" type="VARCHAR(255)"/>
+            <column name="status" type="INT"/>
+            <column name="type" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-3">
+        <createTable tableName="authority">
+            <column name="name" type="VARCHAR(50)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="authorityPK"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-4">
+        <createTable tableName="clinic">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="clinicPK"/>
+            </column>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_modified_date" type="datetime(6)"/>
+            <column name="code" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="hospital_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="medical_specialty_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-5">
+        <createTable tableName="doctor">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="doctorPK"/>
+            </column>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_modified_date" type="datetime(6)"/>
+            <column name="academic_rank_first" type="VARCHAR(255)"/>
+            <column name="academic_rank_second" type="VARCHAR(255)"/>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="job_title_id" type="BIGINT"/>
+            <column name="medical_speciality_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="status" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-6">
+        <createTable tableName="doctor_appointment">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="doctor_appointmentPK"/>
+            </column>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_modified_date" type="datetime(6)"/>
+            <column name="appointment_code" type="VARCHAR(255)"/>
+            <column name="approved_by" type="VARCHAR(255)"/>
+            <column name="booking_code" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="change_appointment_reason" type="VARCHAR(255)"/>
+            <column name="end_time" type="datetime(6)"/>
+            <column name="have_health_insurance" type="INT"/>
+            <column name="is_reexamination" type="INT"/>
+            <column name="medical_reason" type="VARCHAR(255)"/>
+            <column name="old_appointment_code" type="VARCHAR(255)"/>
+            <column name="reexamination_date" type="datetime(6)"/>
+            <column name="reject_reason" type="VARCHAR(255)"/>
+            <column name="start_time" type="datetime(6)"/>
+            <column name="status" type="INT"/>
+            <column name="clinic_id" type="BIGINT"/>
+            <column name="doctor_id" type="BIGINT"/>
+            <column name="patient_record_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-7">
+        <createTable tableName="doctor_schedule">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="doctor_schedulePK"/>
+            </column>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_modified_date" type="datetime(6)"/>
+            <column name="status" type="INT"/>
+            <column name="working_date" type="datetime(6)"/>
+            <column name="working_time" type="INT"/>
+            <column name="doctor_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-8">
+        <createTable tableName="health_facilities">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="health_facilitiesPK"/>
+            </column>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_modified_date" type="datetime(6)"/>
+            <column name="address" type="VARCHAR(255)"/>
+            <column name="city_code" type="VARCHAR(255)"/>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="district_code" type="VARCHAR(255)"/>
+            <column name="email" type="VARCHAR(255)"/>
+            <column name="fax" type="VARCHAR(255)"/>
+            <column name="img_path" type="VARCHAR(255)"/>
+            <column name="latitude" type="DOUBLE"/>
+            <column name="longitude" type="DOUBLE"/>
+            <column name="manager" type="VARCHAR(255)"/>
+            <column name="medicalprocess_path" type="VARCHAR(255)"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="parent" type="BIGINT"/>
+            <column name="phone" type="VARCHAR(255)"/>
+            <column name="status" type="INT"/>
+            <column name="ward_code" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-9">
+        <createTable tableName="medical_service">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="medical_servicePK"/>
+            </column>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_modified_date" type="datetime(6)"/>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="price" type="DECIMAL(19, 2)"/>
+            <column name="status" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-10">
+        <createTable tableName="patient_record">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="patient_recordPK"/>
+            </column>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_modified_date" type="datetime(6)"/>
+            <column name="address" type="VARCHAR(255)"/>
+            <column name="dob" type="datetime(6)"/>
+            <column name="email" type="VARCHAR(255)"/>
+            <column name="gender" type="VARCHAR(255)"/>
+            <column name="health_insurance_code" type="VARCHAR(255)"/>
+            <column name="height" type="DECIMAL(19, 2)"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="patient_record_code" type="VARCHAR(255)"/>
+            <column name="phone" type="VARCHAR(255)"/>
+            <column name="weight" type="DECIMAL(19, 2)"/>
+            <column name="city_code" type="VARCHAR(255)"/>
+            <column name="district_code" type="VARCHAR(255)"/>
+            <column name="ward_code" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-11">
+        <createTable tableName="position">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="positionPK"/>
+            </column>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_modified_date" type="datetime(6)"/>
+            <column name="code" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="parent_id" type="BIGINT"/>
+            <column name="status" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-12">
+        <createTable tableName="position_history">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="position_historyPK"/>
+            </column>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_modified_date" type="datetime(6)"/>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="position_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-13">
+        <createTable tableName="topic">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="topicPK"/>
+            </column>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_modified_date" type="datetime(6)"/>
+            <column name="code" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-14">
+        <createTable tableName="upload_file">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="upload_filePK"/>
+            </column>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_modified_date" type="datetime(6)"/>
+            <column name="folder_name" type="VARCHAR(100)"/>
+            <column name="mime_type" type="VARCHAR(100)"/>
+            <column name="original_name" type="VARCHAR(300)"/>
+            <column name="stored_name" type="VARCHAR(100)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-15">
+        <createTable tableName="user_authority">
+            <column name="user_id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="authority_name" type="VARCHAR(50)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-16">
+        <createTable tableName="users">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="usersPK"/>
+            </column>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_modified_date" type="datetime(6)"/>
+            <column name="activated" type="BIT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(254)"/>
+            <column name="email" type="VARCHAR(254)"/>
+            <column name="login" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(200)"/>
+            <column name="password_hash" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone_number" type="VARCHAR(50)"/>
+            <column name="password_salt" type="VARCHAR(10)"/>
+            <column name="status" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-17">
+        <addUniqueConstraint columnNames="email" constraintName="UC_USERSEMAIL_COL" tableName="users"/>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-18">
+        <addUniqueConstraint columnNames="login" constraintName="UC_USERSLOGIN_COL" tableName="users"/>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-19">
+        <addUniqueConstraint columnNames="area_code" constraintName="UK_27fvyghe43bdarg4na3pkf0mw" tableName="area"/>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-20">
+        <addForeignKeyConstraint baseColumnNames="medical_specialty_id" baseTableName="clinic" constraintName="FK1w5syc2cqwbrxyepxc0mw3haq" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="health_facilities" validate="true"/>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-21">
+        <addForeignKeyConstraint baseColumnNames="patient_record_id" baseTableName="doctor_appointment" constraintName="FK4iv9fufnnd8q9sp00dckd4ai1" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="patient_record" validate="true"/>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-22">
+        <addForeignKeyConstraint baseColumnNames="district_code" baseTableName="patient_record" constraintName="FK6aykyys1p9wtnooex6bef08s6" deferrable="false" initiallyDeferred="false" referencedColumnNames="area_code" referencedTableName="area" validate="true"/>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-23">
+        <addForeignKeyConstraint baseColumnNames="authority_name" baseTableName="user_authority" constraintName="FK6ktglpl5mjosa283rvken2py5" deferrable="false" initiallyDeferred="false" referencedColumnNames="name" referencedTableName="authority" validate="true"/>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-24">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="user_authority" constraintName="FKhi46vu7680y1hwvmnnuh4cybx" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="users" validate="true"/>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-25">
+        <addForeignKeyConstraint baseColumnNames="clinic_id" baseTableName="doctor_appointment" constraintName="FKkshm1e6rd4d5oag1estuyqmob" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="clinic" validate="true"/>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-26">
+        <addForeignKeyConstraint baseColumnNames="ward_code" baseTableName="patient_record" constraintName="FKo7hbkrhnf8dene442bxhb508i" deferrable="false" initiallyDeferred="false" referencedColumnNames="area_code" referencedTableName="area" validate="true"/>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-27">
+        <addForeignKeyConstraint baseColumnNames="city_code" baseTableName="patient_record" constraintName="FKpcru8j4848pt8bso6a4hdr8gu" deferrable="false" initiallyDeferred="false" referencedColumnNames="area_code" referencedTableName="area" validate="true"/>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-28">
+        <addForeignKeyConstraint baseColumnNames="doctor_id" baseTableName="doctor_schedule" constraintName="FKrresxag4ex638q3fincrya0wr" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="doctor" validate="true"/>
+    </changeSet>
+    <changeSet author="anhmi (generated)" id="1607058690689-29">
+        <addForeignKeyConstraint baseColumnNames="doctor_id" baseTableName="doctor_appointment" constraintName="FKuurnj3pc0o1p3dwlvl4tm6us" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="doctor" validate="true"/>
+    </changeSet>
+</databaseChangeLog>

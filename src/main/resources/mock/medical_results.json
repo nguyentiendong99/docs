@@ -1,0 +1,287 @@
+[
+	{
+		"his_makham": "12344",
+		"his_mabenhnhan": "HSBN-123",
+		"his_tenbenhnhan": "Nguyễn Hoàng A",
+		"his_mabenh": "K35",
+		"his_tenbenh": "Viêm ruột thừa cấp",
+		"his_mabenhkhac": null,
+		"his_dienbien": "Viêm ruột thừa (cấp tính) với viêm phúc mạc toàn thể (lan tỏa) do vỡ hoặc thủng",
+		"his_hoichan": null,
+		"his_phauthuat": null,
+		"his_tenchuyenkhoa": "KHOA TIÊU HÓA",
+		"his_tenbenhvien": "Bệnh viện đa khoa tỉnh Yên Bái",
+		"his_ngaykham": "202012101028",
+		"his_tenhinhanh": "Ảnh viêm ruột thừa",
+		"his_hinhanh": "https://vinmec-prod.s3.amazonaws.com/images/20190705_054933_661981_1.max-800x800.png",
+		"his_thuoc": [
+			{
+				"his_makham": "12344",
+				"his_mathuoc": "DEMO_DRUG_03",
+				"his_tenthuoc": "Acetylleucin",
+				"his_donvitinh": "Viên",
+				"his_hamluong": "10",
+				"his_duongdung": "Uống",
+				"his_lieudung": "2 viên/lần * 2 lần/ngày"
+			}
+		],
+		"his_cls": [
+			{
+				"his_makham": "12344",
+				"cls_madichvu": "DEMO_SUBCLINICAL_03",
+				"cls_tendichvu": "Phân tích máu 7 chỉ số",
+				"cls_machiso": null,
+				"cls_tenchiso": null,
+				"cls_giatri": null,
+				"cls_mamay": "DEMO_MACHINE_02",
+				"cls_mota": "",
+				"cls_ketluan": "Chờ chết",
+				"cls_ngaykq": "202012111130",
+				"cls_kithuatvien": "Trần Thu Hà",
+				"cls_phongthuchien": "Phòng chấn thương chỉnh hình"
+			}
+		]
+	},
+	{
+		"his_makham": "12345",
+		"his_mabenhnhan": "HSBN-124",
+		"his_tenbenhnhan": "Nguyễn Hoàng B",
+		"his_mabenh": "K40",
+		"his_tenbenh": "Thoát vị bẹn",
+		"his_mabenhkhac": "K41.0:K43.0",
+		"his_dienbien": "Thoát vị đùi hai bên không đặc hiệu",
+		"his_hoichan": null,
+		"his_phauthuat": null,
+		"his_tenchuyenkhoa": "KHOA XƯƠNG",
+		"his_tenbenhvien": "Bệnh viện đa khoa tỉnh Yên Bái",
+		"his_ngaykham": "202101101515",
+		"his_tenhinhanh": "Ảnh thoát vị bẹn",
+		"his_hinhanh": "https://vinmec-prod.s3.amazonaws.com/images/20190917_080502_406148_131737thoat-vi-ben.max-800x800.jpg",
+		"his_thuoc": [
+			{
+				"his_makham": "12345",
+				"his_mathuoc": "DEMO_DRUG_03",
+				"his_tenthuoc": "Acetylleucin",
+				"his_donvitinh": "Viên",
+				"his_hamluong": "10",
+				"his_duongdung": "Uống",
+				"his_lieudung": "2 viên/lần * 2 lần/ngày"
+			}
+		],
+		"his_cls": [
+			{
+				"his_makham": "12345",
+				"cls_madichvu": "DEMO_SUBCLINICAL_03",
+				"cls_tendichvu": "Phân tích máu 7 chỉ số",
+				"cls_machiso": null,
+				"cls_tenchiso": null,
+				"cls_giatri": null,
+				"cls_mamay": "DEMO_MACHINE_02",
+				"cls_mota": "",
+				"cls_ketluan": "Chờ chết",
+				"cls_ngaykq": "202012111130",
+				"cls_kithuatvien": "Trần Thu Trang",
+				"cls_phongthuchien": "Phòng nội soi"
+			}
+		]
+	},
+	{
+		"his_makham": "12346",
+		"his_mabenhnhan": "HSBN-124",
+		"his_tenbenhnhan": "Nguyễn Hoàng B",
+		"his_mabenh": "A01.0",
+		"his_tenbenh": "Thương hàn",
+		"his_mabenhkhac": "A03.0:A00.1",
+		"his_dienbien": "Bệnh đang có tiến triển xấu dần, ảnh hưởng tới phổi!",
+		"his_hoichan": null,
+		"his_phauthuat": null,
+		"his_tenchuyenkhoa": "KHOA LÂY NHIỄM",
+		"his_tenbenhvien": "Bệnh viện đa khoa tỉnh Yên Bái",
+		"his_ngaykham": "202101110825",
+		"his_tenhinhanh": "Ảnh x-quang 1, Ảnh x-quang 2",
+		"his_hinhanh": "https://yhoccongdong.com/wp-content/uploads/2013/04/chup-x-quang-1280x720.jpeg,https://vinmec-prod.s3.amazonaws.com/images/20190907_085408_605601_chup-xquang-tim-pho.max-1800x1800.jpg",
+		"his_thuoc": [
+			{
+				"his_makham": "12346",
+				"his_mathuoc": "DEMO_DRUG_03",
+				"his_tenthuoc": "Acetylleucin",
+				"his_donvitinh": "Viên",
+				"his_hamluong": "10",
+				"his_duongdung": "Uống",
+				"his_lieudung": "2 viên/lần * 2 lần/ngày"
+			}
+		],
+		"his_cls": [
+			{
+				"his_makham": "12346",
+				"cls_madichvu": "DEMO_SUBCLINICAL_03",
+				"cls_tendichvu": "Phân tích máu 7 chỉ số",
+				"cls_machiso": null,
+				"cls_tenchiso": null,
+				"cls_giatri": null,
+				"cls_mamay": "DEMO_MACHINE_02",
+				"cls_mota": "",
+				"cls_ketluan": "Chờ chết",
+				"cls_ngaykq": "202012111130",
+				"cls_kithuatvien": "Trần Thu Hà",
+				"cls_phongthuchien": "Phòng chấn thương chỉnh hình"
+			}
+		]
+	},
+	{
+		"his_makham": "12347",
+		"his_mabenhnhan": "HSBN-1000",
+		"his_tenbenhnhan": "Nguyễn Hoàng C",
+		"his_mabenh": "K21",
+		"his_tenbenh": "Bệnh trào ngược dạ dày - thực quản",
+		"his_mabenhkhac": null,
+		"his_dienbien": "Viêm thực quản do trào ngược",
+		"his_hoichan": null,
+		"his_phauthuat": null,
+		"his_tenchuyenkhoa": "KHOA TIÊU HÓA",
+		"his_tenbenhvien": "Bệnh viện đa khoa tỉnh Yên Bái",
+		"his_ngaykham": "202101071330",
+		"his_tenhinhanh": "Ảnh viêm thực quản",
+		"his_hinhanh": "https://www.thuocdantoc.org/wp-content/uploads/2019/08/viem-thuc-quan-3.jpg",
+		"his_thuoc": [
+			{
+				"his_makham": "12347",
+				"his_mathuoc": "DEMO_DRUG_01",
+				"his_tenthuoc": "Acetylleucin",
+				"his_donvitinh": "Viên",
+				"his_hamluong": "10",
+				"his_duongdung": "Uống",
+				"his_lieudung": "2 viên/lần * 2 lần/ngày"
+			},
+			{
+				"his_makham": "12347",
+				"his_mathuoc": "DEMO_DRUG_02",
+				"his_tenthuoc": "Cinnarizin",
+				"his_donvitinh": "Viên",
+				"his_hamluong": "20",
+				"his_duongdung": "Uống",
+				"his_lieudung": "2 viên/lần * 3 lần/ngày"
+			}
+		],
+		"his_cls": [
+			{
+				"his_makham": "12347",
+				"cls_madichvu": "DEMO_SUBCLINICAL_01",
+				"cls_tendichvu": "Phân tích máu 18 chỉ số",
+				"cls_machiso": null,
+				"cls_tenchiso": null,
+				"cls_giatri": null,
+				"cls_mamay": "DEMO_MACHINE",
+				"cls_mota": "",
+				"cls_ketluan": "Sắp tử",
+				"cls_ngaykq": "202012121030",
+				"cls_kithuatvien": "Nguyễn Văn Chương",
+				"cls_phongthuchien": "Phòng hội chẩn"
+			}
+		]
+	},
+	{
+		"his_makham": "12348",
+		"his_mabenhnhan": "HSBN-1000",
+		"his_tenbenhnhan": "Nguyễn Hoàng C",
+		"his_mabenh": "I20.1",
+		"his_tenbenh": "Cơn đau thắt ngực do co thắt mạch",
+		"his_mabenhkhac": "I20.8",
+		"his_dienbien": " Cơn đau thắt ngực khi gắng sức",
+		"his_hoichan": null,
+		"his_phauthuat": null,
+		"his_tenchuyenkhoa": "KHOA HÔ HẤP",
+		"his_tenbenhvien": "Bệnh viện đa khoa tỉnh Yên Bái",
+		"his_ngaykham": "202011110824",
+		"his_tenhinhanh": "Ảnh x-quang 1",
+		"his_hinhanh": "https://yhoccongdong.com/wp-content/uploads/2013/04/chup-x-quang-1280x720.jpeg",
+		"his_thuoc": [
+			{
+				"his_makham": "12348",
+				"his_mathuoc": "DEMO_DRUG_01",
+				"his_tenthuoc": "Acetylleucin",
+				"his_donvitinh": "Viên",
+				"his_hamluong": "10",
+				"his_duongdung": "Uống",
+				"his_lieudung": "2 viên/lần * 2 lần/ngày"
+			},
+			{
+				"his_makham": "12348",
+				"his_mathuoc": "DEMO_DRUG_02",
+				"his_tenthuoc": "Cinnarizin",
+				"his_donvitinh": "Viên",
+				"his_hamluong": "20",
+				"his_duongdung": "Uống",
+				"his_lieudung": "2 viên/lần * 3 lần/ngày"
+			}
+		],
+		"his_cls": [
+			{
+				"his_makham": "12348",
+				"cls_madichvu": "DEMO_SUBCLINICAL_01",
+				"cls_tendichvu": "Phân tích máu 18 chỉ số",
+				"cls_machiso": null,
+				"cls_tenchiso": null,
+				"cls_giatri": null,
+				"cls_mamay": "DEMO_MACHINE",
+				"cls_mota": "",
+				"cls_ketluan": "Sắp tử",
+				"cls_ngaykq": "202012121030",
+				"cls_kithuatvien": "Nguyễn Văn Chương",
+				"cls_phongthuchien": "Phòng hội chẩn"
+			}
+		]
+	},
+	{
+		"his_makham": "12349",
+		"his_mabenhnhan": "HSBN-1000",
+		"his_tenbenhnhan": "Nguyễn Hoàng C",
+		"his_mabenh": "F10",
+		"his_tenbenh": "Rối loạn tâm thần và hành vi do sử dụng rượu",
+		"his_mabenhkhac": "F10.4:F10.5:F10.6",
+		"his_dienbien": "Rối loạn tâm thần và hành vi do sử dụng nhiều loại rượu và chất tác động tâm thần khác (Nhiễm độc cấp)",
+		"his_hoichan": null,
+		"his_phauthuat": null,
+		"his_tenchuyenkhoa": "KHOA THẦN KINH",
+		"his_tenbenhvien": "Bệnh viện đa khoa tỉnh Yên Bái",
+		"his_ngaykham": "202011110930",
+		"his_tenhinhanh": "Ảnh rối loạn tâm thần",
+		"his_hinhanh": "https://vinmec-prod.s3.amazonaws.com/images/20190514_082638_485434_350--benh-dau-dau_9.max-1800x1800.jpg",
+		"his_thuoc": [
+			{
+				"his_makham": "12349",
+				"his_mathuoc": "DEMO_DRUG_01",
+				"his_tenthuoc": "Acetylleucin",
+				"his_donvitinh": "Viên",
+				"his_hamluong": "10",
+				"his_duongdung": "Uống",
+				"his_lieudung": "2 viên/lần * 2 lần/ngày"
+			},
+			{
+				"his_makham": "{{request.pathSegments.[4]}}",
+				"his_mathuoc": "DEMO_DRUG_02",
+				"his_tenthuoc": "Cinnarizin",
+				"his_donvitinh": "Viên",
+				"his_hamluong": "20",
+				"his_duongdung": "Uống",
+				"his_lieudung": "2 viên/lần * 3 lần/ngày"
+			}
+		],
+		"his_cls": [
+			{
+				"his_makham": "12349",
+				"cls_madichvu": "DEMO_SUBCLINICAL_01",
+				"cls_tendichvu": "Phân tích máu 18 chỉ số",
+				"cls_machiso": null,
+				"cls_tenchiso": null,
+				"cls_giatri": null,
+				"cls_mamay": "DEMO_MACHINE",
+				"cls_mota": "",
+				"cls_ketluan": "Sắp tử",
+				"cls_ngaykq": "202012121030",
+				"cls_kithuatvien": "Nguyễn Văn Chương",
+				"cls_phongthuchien": "Phòng hội chẩn"
+			}
+		]
+	}
+]

@@ -1,0 +1,75 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+    <changeSet author="asus (generated)" id="1610015938743-134">
+        <createTable tableName="his_cls">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="his_clsPK"/>
+            </column>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_modified_date" type="datetime(6)"/>
+            <column name="cls_madichvu" type="VARCHAR(255)"/>
+            <column name="cls_ketluan" type="VARCHAR(255)"/>
+            <column name="cls_mota" type="VARCHAR(255)"/>
+            <column name="his_makham" type="VARCHAR(255)"/>
+            <column name="cls_mamay" type="VARCHAR(255)"/>
+            <column name="cls_machiso" type="VARCHAR(255)"/>
+            <column name="cls_tenchiso" type="VARCHAR(255)"/>
+            <column name="cls_giatri" type="VARCHAR(255)"/>
+            <column name="cls_tendichvu" type="VARCHAR(255)"/>
+            <column name="cls_ngaykq" type="VARCHAR(255)"/>
+            <column name="his_ketquakham_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="asus (generated)" id="1610015938743-135">
+        <createTable tableName="his_ketquakham">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="his_ketquakhamPK"/>
+            </column>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_modified_date" type="datetime(6)"/>
+            <column name="his_hoichan" type="VARCHAR(255)"/>
+            <column name="his_mabenh" type="VARCHAR(255)"/>
+            <column name="his_tenbenh" type="VARCHAR(255)"/>
+            <column name="his_makham" type="VARCHAR(255)"/>
+            <column name="his_dienbien" type="VARCHAR(255)"/>
+            <column name="his_mabenhkhac" type="VARCHAR(255)"/>
+            <column name="his_mabenhnhan" type="VARCHAR(255)"/>
+            <column name="his_phauthuat" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="asus (generated)" id="1610015938743-136">
+        <createTable tableName="hís_thuoc">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="hís_thuocPK"/>
+            </column>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_modified_date" type="datetime(6)"/>
+            <column name="his_mathuoc" type="VARCHAR(255)"/>
+            <column name="his_hamluong" type="VARCHAR(255)"/>
+            <column name="his_makham" type="VARCHAR(255)"/>
+            <column name="his_lieudung" type="VARCHAR(255)"/>
+            <column name="his_duongdung" type="VARCHAR(255)"/>
+            <column name="his_tenthuoc" type="VARCHAR(255)"/>
+            <column name="his_donvitinh" type="VARCHAR(255)"/>
+            <column name="his_ketquakham_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="asus (generated)" id="1610015938743-137">
+        <addForeignKeyConstraint baseColumnNames="his_ketquakham_id" baseTableName="his_cls" constraintName="FKc2a3l7ws0uwg79ihbjbdgmn3d" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="his_ketquakham" validate="true"/>
+    </changeSet>
+    <changeSet author="asus (generated)" id="1610015938743-138">
+        <addForeignKeyConstraint baseColumnNames="his_ketquakham_id" baseTableName="hís_thuoc" constraintName="FKrvkd91fcjfp4bt5rmxm7cdbuk" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="his_ketquakham" validate="true"/>
+    </changeSet>
+</databaseChangeLog>

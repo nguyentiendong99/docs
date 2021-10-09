@@ -1,0 +1,34 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+
+    <changeSet author="tunganh (generated)" id="1612343369897-9">
+        <dropColumn columnName="contact_covid_patient" tableName="medical_declaration_info"/>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1612343369897-10">
+        <dropColumn columnName="contact_people_from_covid_country" tableName="medical_declaration_info"/>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1612343369897-11">
+        <dropColumn columnName="contact_people_with_symptom" tableName="medical_declaration_info"/>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1612343369897-12">
+        <dropColumn columnName="cough_in_21_days" tableName="medical_declaration_info"/>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1612343369897-13">
+        <dropColumn columnName="dyspnoeic_in_21_days" tableName="medical_declaration_info"/>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1612343369897-14">
+        <dropColumn columnName="fever_in_21_days" tableName="medical_declaration_info"/>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1612343369897-15">
+        <dropColumn columnName="nations_go_to" tableName="medical_declaration_info"/>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1612343369897-16">
+        <dropColumn columnName="pneumonic_in_21_days" tableName="medical_declaration_info"/>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1612343369897-17">
+        <dropColumn columnName="sore_throat_in_21_days" tableName="medical_declaration_info"/>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1612343369897-18">
+        <dropColumn columnName="tired_in_21_days" tableName="medical_declaration_info"/>
+    </changeSet>
+</databaseChangeLog>

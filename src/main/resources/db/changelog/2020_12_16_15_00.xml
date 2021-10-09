@@ -1,0 +1,34 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.10.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.10.xsd">
+    <changeSet author="Ha (generated)" id="1608106456374-1">
+        <createTable tableName="doctor_appointment_configuration">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="doctor_appointment_configurationPK"/>
+            </column>
+            <column name="health_facilities_id" type="BIGINT"/>
+            <column name="appointment_daily" type="INT"/>
+            <column name="appointment_doctor" type="INT"/>
+            <column name="start_day_of_week_morning" type="INT"/>
+            <column name="end_day_of_week_morning" type="INT"/>
+            <column name="start_day_of_week_afternoon" type="INT"/>
+            <column name="end_day_of_week_afternoon" type="INT"/>
+            <column name="start_time_morning" type="VARCHAR(255)"/>
+            <column name="end_time_morning" type="VARCHAR(255)"/>
+            <column name="start_time_afternoon" type="VARCHAR(255)"/>
+            <column name="end_time_afternoon" type="VARCHAR(255)"/>
+            <column name="minutes_per_appointment_schedule" type="INT"/>
+            <column name="allow_time_default" type="INT"/>
+            <column name="max_registered_patients_by_daily" type="INT"/>
+            <column name="max_registered_patients_by_doctor" type="INT"/>
+            <column name="connect_with_his" type="INT"/>
+            <column name="prepayment_medical_service" type="INT"/>
+            <column name="status" type="INT"/>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="datetime(6)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_modified_date" type="datetime(6)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

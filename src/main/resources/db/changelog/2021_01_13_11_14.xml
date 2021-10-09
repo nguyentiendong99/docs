@@ -1,0 +1,21 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+    <changeSet author="thean (generated)" id="1610536495017-1">
+        <createTable tableName="category_config_field_main">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="category_config_field_mainPK"/>
+            </column>
+            <column name="column_name" type="VARCHAR(255)"/>
+            <column name="display" type="INT"/>
+            <column name="index" type="INT"/>
+            <column name="status" type="INT"/>
+            <column name="type" type="VARCHAR(255)"/>
+            <column name="health_facility_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="thean (generated)" id="1610536495017-2">
+        <addForeignKeyConstraint baseColumnNames="health_facility_id" baseTableName="category_config_field_main" constraintName="FKitlu5s2srrivb5qfcw6glic73" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="health_facilities" validate="true"/>
+    </changeSet>
+</databaseChangeLog>

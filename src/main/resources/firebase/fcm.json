@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "evotek-medical-appointment",
+  "private_key_id": "f807a752da533ff7cc08d66b9c23550f1a7bc242",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCf607t0w7URszg\n3k0rJ+CMnYt4Wmrjh0Bk0pfC1nPWeGMiKbIlqCVyGGkgPRAq5MZ35g4WQDdw7a4J\nX80uNMGbnqEsWcMcr3zisKUJv0SZ7Ob2hEYF0H4J0I3Pvb7Lo0MAQy5D/hdSKXJQ\norQBs+4VQGLSZLS5V7teagYi1GEiwTbKxYO1sWmuQITaYZQMNp5l5ViBaqut/S/k\nSrlheTdTfzYOaZLUizHZEGJo6WbI7FIkTNWv9XyDZchZ1m+BtmrgxibAnrT+mwbX\nq8vJbNyRxIZen9cNZvu+QuXMm/N9+xl6n6PHAK3V+GgpFYNkt4GqQ5HZdTaww8+E\nJcAVJdQ5AgMBAAECggEAMBNXeRu4G4zlTrzFyjGEygEayqWz+I7Shvzgbsx1qoYq\nlzydt8Bi8XfxMqXo1FxOZgEdPwczI5nwdhT84+UsRxJbNbAOffMrwiKEmveLMhMM\nJBQD0P+qxFyUJV3Pm/yKyetoXzxl2mdnXGJtZw2mh3EBxGpOAmIji/Cnw5TBVubw\ntk6BOQ/gRleL0dAX+OYsFsT4hGbYdK+TvoOdzmVbvZT5i9nxWsexvUq++88E+VBa\nwe3Xvn3wx+T/eq5Oq8q+ib/HySkv+gvea8jQUABTlHTRjZhIRWeYdbXWluClHKes\n25+3E9iG2pB3vld/rYP8UGmn4HtWFqYT+WzQWp5RGQKBgQDgmamT0j1yy9fn5awm\nXyrxIZjOywwquMW8cETU3fzFOa7hX3PpYExtPRz8HEt+DRcOqMRPA+Ij0m/AW0J9\nfr6+DlKrHNT74EndjxoO2BzadSxchyxW9uV+DaEvhYlg2AM94Lg8zaRSBi/Ax482\nW+HQyEr22g+VMrGtcL+j8oX+mwKBgQC2Rr2cDzN/raGF4zhux8+A653pxO4mX1+5\nv1eeRSCu32lG351DhdnTsedWhJE3mb8fH21FDNR+Kr1wcPNNBHt6WTd1ZACygGu2\n0HdiwaTIsh6fAzc83PIltM/PN07qT/C3uNI9UoCGFCOUPmz9NvC+78VNjdEvOhYM\nkJhR76ebuwKBgQCvrqKdlQMpy1cL9nQM474UNYJwpxTSSgup1WuR0j5JC1DGy0JA\nl2nQvM/ySDOo2pZhihNb9x6phI6TOQ8uWLjcsxlo7TmP96Xvn2Lzn4oaOzNDARzm\nvWNPkVu2b07BKNaITUHvla9l1Z7+vVpBW+erxzAUHQe5XZjroNjWZfr35wKBgBRb\n4mHD8OSZ6CikMHFvL+YeawzpShBPJsoAbTDoV7Ywjfm0kEQydxoGDOjE9dNYANjh\nEbtcq39MFsywUPyRO5l2zZL3EHzfiyhoMG1/Y4BnJLRuD4VkyEcd4vgqHU5ej2x1\n4EWpKWHQbgjo0BOYR1uMPGVlKbA0tLHClMDSG85xAoGAFwySU1dGDQBCkaPNzxr+\nAim3Bth7t6hDlbTy4NN1JWHbFesKOdq5sxqRY8+ne8vtS0YbwbB5AgfG1GosMVMe\nhraHjfIpOlKbd6yXAAWck95GWsN06cxwrtZZZxdKY2OmyJ0RQYDwhx1af2Rzetc5\n8vUKGlINW36kdvwOXsnN3HY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-j60wt@evotek-medical-appointment.iam.gserviceaccount.com",
+  "client_id": "112120608072076073706",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-j60wt%40evotek-medical-appointment.iam.gserviceaccount.com"
+}

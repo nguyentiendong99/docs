@@ -1,0 +1,38 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.10.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.10.xsd">
+    <changeSet author="tunganh (generated)" id="1607595095105-1">
+        <addColumn tableName="activity_log">
+            <column name="action_type" type="integer"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1607595095105-2">
+        <addColumn tableName="activity_log">
+            <column name="content_id" type="bigint"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1607595095105-3">
+        <addColumn tableName="activity_log">
+            <column name="content_type" type="integer"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1607595095105-4">
+        <addColumn tableName="activity_log">
+            <column name="old_content" type="text"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1607595095105-6">
+        <dropColumn columnName="action" tableName="activity_log"/>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1607595095105-7">
+        <dropColumn columnName="job_title" tableName="activity_log"/>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1607595095105-8">
+        <dropColumn columnName="module_name" tableName="activity_log"/>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1607595095105-9">
+        <dropColumn columnName="owner_id" tableName="activity_log"/>
+    </changeSet>
+    <changeSet author="tunganh (generated)" id="1607597080135-2">
+        <dropColumn columnName="hospital_id" tableName="clinic"/>
+    </changeSet>
+</databaseChangeLog>

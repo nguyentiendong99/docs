@@ -1,0 +1,18 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.10.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.10.xsd">
+    <changeSet author="asus (generated)" id="1608556067319-26">
+        <addForeignKeyConstraint baseColumnNames="parent_id" baseTableName="department" constraintName="FKmgsnnmudxrwqidn4f64q8rp4o" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="department" validate="true"/>
+    </changeSet>
+    <changeSet author="asus (generated)" id="1608556067319-27">
+        <dropForeignKeyConstraint baseTableName="relationship" constraintName="FK4ttuqsyv3i423oicjx3ydgsew"/>
+    </changeSet>
+    <changeSet author="asus (generated)" id="1608556067319-28">
+        <dropForeignKeyConstraint baseTableName="relationship" constraintName="FKj61ito40rh5mona6dbjcb9ubp"/>
+    </changeSet>
+    <changeSet author="asus (generated)" id="1608556067319-29">
+        <dropTable tableName="position_history"/>
+    </changeSet>
+    <changeSet author="asus (generated)" id="1608556067319-30">
+        <dropTable tableName="relationship"/>
+    </changeSet>
+</databaseChangeLog>

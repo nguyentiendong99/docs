@@ -1,0 +1,25 @@
+version: '3.3'
+
+services:
+  mysql:
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: lichkham
+      MYSQL_USER: lichkham
+      MYSQL_PASSWORD: LK1234a@
+
+  admin:
+    build: .
+    depends_on:
+      - mysql
+    ports:
+      - 8080:8080
+
+volumes:
+    db_data: {}

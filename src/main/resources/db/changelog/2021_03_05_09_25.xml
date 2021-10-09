@@ -1,0 +1,20 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+    <changeSet author="asus (generated)" id="1614936328500-202">
+        <addColumn tableName="clinic">
+            <column name="health_facility_id" type="bigint"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="asus (generated)" id="1614937492439-204">
+        <addForeignKeyConstraint baseColumnNames="health_facility_id" baseTableName="clinic" constraintName="FKbdk2pttgg61j40b0jrin20sq1" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="health_facilities" validate="true"/>
+    </changeSet>
+    <changeSet author="asus (generated)" id="1614936328500-207">
+        <dropForeignKeyConstraint baseTableName="clinic" constraintName="FKqmkplvtrnkqxbuw2bgwyteoh7"/>
+    </changeSet>
+    <changeSet author="asus (generated)" id="1614936328500-209">
+        <dropColumn columnName="medical_specialty_id" tableName="clinic"/>
+    </changeSet>
+    <changeSet author="asus (generated)" id="1615004026045-20">
+        <dropNotNullConstraint columnDataType="bigint" columnName="clinic_id" tableName="doctor_schedule"/>
+    </changeSet>
+</databaseChangeLog>
